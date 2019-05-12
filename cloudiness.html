@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Visualization Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href = "styles.css">
+  <style>
+        body {background-color:rgb(192, 227, 236)}
+  </style>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <!-- Mobile display grouping -->
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Latitude</a>
+                  </div>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="maxtemp.html">Max Temperature</a></li>
+                          <li><a href="humidity.html">Humidity</a></li>
+                          <li><a href="cloudiness.html">Cloudiness</a></li>
+                          <li><a href="windspeed.html">Wind Speed</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="comparison.html">Comparison</a></li>
+                      <li><a href="data.html">Data</a></li>
+                    </ul>
+                  </div>
+                </div>
+        </nav>
+    <br>
+
+    <div class="container">
+        <!--<div class="row">-->
+      <div class="row">
+        <div class="col-lg-8 col-sm-12">
+          <h1>Cloudiness</h1>
+          <hr>
+            <img src="latitude_cloudiness.png" alt="cloudiness" height="400" width="600" align="center">
+          <p>There is no relationship between latitude and cloudiness.  The percent of cloudiness does not vary with different latitudes.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h2>Visualizations</h2>
+            <hr>
+            <div class= "col-md-6 col-sm-3">
+                <img id ="pic1" src="latitude_maxtemp.png" alt="maxtemp" height="150" width="200"> 
+            </div> 
+            <div class= "col-md-6 col-sm-3">
+                <img id = "pic2" src="latitude_humidity.png" alt="humidity" height="150" width="200">
+            </div> 
+            <div class= "col-md-6 col-sm-3">
+                <img class = "boxx"  id = "pic3" src="latitude_cloudiness.png" alt="cloudiness" height="150" width="200">
+            </div> 
+            <div class= "col-md-6 col-sm-3">
+                <img id = "pic4" src="latitude_windspeed.png" alt="windspeed" height="150" width="200">
+            </div> 
+        </div>
+</div>
+</div>
+</body>
+</html>
+        
